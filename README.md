@@ -1,6 +1,6 @@
-# Эмуляция множества IoT-устройств с помощью Terraform
+# Эмуляция множества IoT-устройств Yandex IoT Core с помощью Terraform
 
-В этом сценарии вы узнаете, как эмулировать множество [устройств](https://yandex.cloud/ru/docs/iot-core/concepts/#device), которые отправляют сообщения в MQTT-[топики](https://yandex.cloud/ru/docs/iot-core/concepts/topic/). В примере эмулируется работа датчиков воздуха, которые измеряют следующие параметры:
+В этом сценарии вы узнаете, как эмулировать множество [устройств](https://yandex.cloud/ru/docs/iot-core/concepts/#device) [Yandex IoT Core](https://yandex.cloud/ru/docs/iot-core/), которые отправляют сообщения в MQTT-[топики](https://yandex.cloud/ru/docs/iot-core/concepts/topic/). В примере эмулируется работа датчиков воздуха, которые измеряют следующие параметры:
 
 В качестве примера, эмулятор выдает сигнал датчика воздуха, измеряющего следующие параметры:
 * Температура.
@@ -25,7 +25,7 @@
 
 ## Создание инфраструктуры
 
-Пример содержит файл `iot_data.js` с кодом функции Yandex Cloud Functions и файлы конфигурации Terraform для создания инфраструктуры.
+Пример содержит файл `iot_data.js` с кодом функции [Yandex Cloud Functions](https://yandex.cloud/ru/docs/functions/) и файлы конфигурации Terraform для создания инфраструктуры.
 
 [Terraform](https://www.terraform.io/) позволяет быстро создать облачную инфраструктуру в Yandex Cloud и управлять ею с помощью файлов конфигураций. В файлах конфигураций хранится описание инфраструктуры на языке HCL (HashiCorp Configuration Language). Terraform и его провайдеры распространяются под лицензией [Business Source License](https://github.com/hashicorp/terraform/blob/main/LICENSE).
 
